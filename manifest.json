@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Gemini Codeblock Citation Remover",
+    "version": "1.0",
+    "description": "Removes citation tags from inside Gemini code blocks.",
+    "permissions": ["storage"],
+    "content_scripts": [
+      {
+        "matches": ["https://gemini.google.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
